@@ -1,0 +1,242 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: "poppins";
+    src: url("../form/Poppins-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: "poppins";
+    src: url("../form/Poppins-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face{
+    font-family: "poppins";
+    src: url("../form/Poppins-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: "poppins";
+    src: url("../form/Poppins-SemiBold.ttf");
+    font-weight: 600;
+}
+
+body{
+    font-size: 16px;
+    color:white;
+    font-family: "poppins";
+    font-weight: 400;
+    height: 100vh;
+}
+
+h1{
+    font-family: "poppins";
+    font-weight: 700;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.section{
+    padding: 80px 100px;
+    background-image:url("../images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%) ;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    max-width: 1440px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+
+.info h1{
+    font-size: 3em;
+}
+
+.info p{
+  font-size: 1em;
+}
+
+.try--button{
+    color: white;
+    background: hsl(248, 32%, 49%);
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    font-family: "poppins";
+    font-weight: 400;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    cursor: pointer; 
+    width: 100%;
+    box-shadow: 0 10px 2px rgba(0, 0,0, 0.3) ;
+}
+
+.try--button:hover{
+    background-color: white;
+    color: hsl(248, 32%, 49%);
+}
+
+.highlight{
+    font-family: "poppins";
+    font-weight: 700;
+}
+
+.box{
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 2px rgba(0, 0,0, 0.3) ;
+}
+
+.little--box{
+    padding: 25px 15px;
+    width: 100%;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.little--box:hover{
+    border: 1px solid hsl(248, 32%, 49%) ;
+}
+
+::placeholder{
+    font-family: "poppins";
+    font-weight: 600;
+    font-size: 1.2em;
+    color: hsl(249, 10%, 26%) ;
+}
+
+
+.submit--button{
+    padding: 15px;
+    background-color : hsl(154, 59%, 51%);
+    color: white;
+    font-family: "poppins";
+    font-weight: 500;
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 100%;
+    box-shadow:  0 5px 2px hsl(154, 39%, 51%);
+}
+
+.submit--button:hover{
+    background-color: hsl(0, 100%, 74%);
+    color : hsl(154, 59%, 51%);
+
+}
+
+.text{
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+    padding: 15px 30px;
+    font-size: 0.8em;   
+}
+
+.text--color{
+    font-family: "poppins";
+    font-weight: 700;
+    color: hsl(0, 100%, 74%) ;
+}
+
+
+.display{
+    display: flex;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
+.message{
+    color:hsl(0, 100%, 74%);
+    font-family: "poppins";
+    font-weight: 600;
+
+}
+
+.firsticon{
+    visibility: hidden;
+}
+
+.lasticon{
+    visibility: hidden;
+}
+
+.emailicon{
+    visibility: hidden;
+}
+
+.passwordicon{
+    visibility: hidden;
+}
+
+.icon--error{
+    visibility: visible;
+    margin-left: 15px;
+}
+
+.little--boxerror{
+    border: 1px solid hsl(0, 100%, 74%);
+}
+
+.attribution { font-size: 11px; text-align: center; margin-top: 50px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+@media only screen and (max-width:950px){
+
+    .section{
+        background-image:url("../images/bg-intro-mobile.png");
+        background-color: hsl(0, 100%, 74%) ;
+        padding: 100px 25px;
+        
+    }
+
+    .container{
+        display: block;
+    }
+
+    .info{
+        text-align: center;
+        display: block; 
+        padding: 10px;
+    }
+    
+    .info h1{
+        font-size: 2em;
+    }
+
+    .info p{
+        font-size: 1.3em;
+      }
+
+    .try--button{
+        padding: 35px 80px;
+        margin-top: 75px;
+        margin-bottom: 30px;
+    }
+
+    .text{
+        padding: 15px 45px;  
+    }
+}
